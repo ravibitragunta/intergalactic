@@ -1,2 +1,6 @@
+factory/TestAssertionTokenizer.class
+factory/TestMetalTokenizer.class
+factory/TestQueryTokenizer.class
 com/tw/iconverter/AppTest.class
+com/tw/iconverter/lexer/TestEvaluator.class
 com/tw/iconverter/utils/TestRomanNumberConverter.class

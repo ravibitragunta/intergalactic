@@ -1,3 +1,13 @@
+/Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/factory/TokenTypes.java
 /Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/utils/RomanNumbers.java
+/Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/factory/AssertionTokenizer.java
 /Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/App.java
+/Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/utils/Metals.java
+/Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/lexer/CustomEvaluator.java
 /Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/utils/RomanNumberConverter.java
+/Users/ravi/Documents/sts/iconverter/src/main/java/model/GalacticalToken.java
+/Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/factory/BaseTokenizer.java
+/Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/factory/MetalTokenizer.java
+/Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/utils/Constants.java
+/Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/factory/TokenizerFactory.java
+/Users/ravi/Documents/sts/iconverter/src/main/java/com/tw/iconverter/factory/QueryTokenizer.java

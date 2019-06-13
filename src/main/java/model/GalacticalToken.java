@@ -1,11 +1,12 @@
 package model;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class GalacticalToken {
 
-	private Map<String, String> tokenValueMap = new HashMap<>();
+	private Map<String, String> tokenValueMap = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+;
 	private static GalacticalToken instance;
 
 	private GalacticalToken() {

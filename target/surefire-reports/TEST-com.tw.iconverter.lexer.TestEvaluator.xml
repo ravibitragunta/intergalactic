@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.tw.iconverter.utils.TestRomanNumberConverter" time="0.125" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="com.tw.iconverter.lexer.TestEvaluator" time="0.025" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib"/>
@@ -65,9 +65,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.tw.iconverter.utils.TestRomanNumberConverter" name="givenMMMXCM_shouldReturnFail" time="0.121"/>
-  <testcase classname="com.tw.iconverter.utils.TestRomanNumberConverter" name="givenMMMXC_shouldReturn3090" time="0.001"/>
-  <testcase classname="com.tw.iconverter.utils.TestRomanNumberConverter" name="givenMMMM_shouldFail" time="0.001"/>
-  <testcase classname="com.tw.iconverter.utils.TestRomanNumberConverter" name="givenMCMXLIVtoNumber_shouldReturn1944" time="0.001"/>
-  <testcase classname="com.tw.iconverter.utils.TestRomanNumberConverter" name="givenMMXVIIItoNumber_shouldreturn2018" time="0.001"/>
+  <testcase classname="com.tw.iconverter.lexer.TestEvaluator" name="test_case_1" time="0"/>
+  <testcase classname="com.tw.iconverter.lexer.TestEvaluator" name="test_case_2" time="0"/>
+  <testcase classname="com.tw.iconverter.lexer.TestEvaluator" name="test_case_3" time="0"/>
+  <testcase classname="com.tw.iconverter.lexer.TestEvaluator" name="test_case_4" time="0"/>
+  <testcase classname="com.tw.iconverter.lexer.TestEvaluator" name="test_case_5" time="0.003"/>
+  <testcase classname="com.tw.iconverter.lexer.TestEvaluator" name="test_case_6" time="0.002"/>
+  <testcase classname="com.tw.iconverter.lexer.TestEvaluator" name="test_case_7" time="0.002"/>
+  <testcase classname="com.tw.iconverter.lexer.TestEvaluator" name="test_case_8" time="0.018"/>
 </testsuite>

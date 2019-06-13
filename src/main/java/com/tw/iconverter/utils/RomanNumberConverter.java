@@ -25,16 +25,16 @@ public class RomanNumberConverter {
 
 		String romanNumeral = romanLiteral.toUpperCase();
 
-		if (logger.isInfoEnabled()) {
-			logger.info("Pattern matching for " + romanNumeral);
+		if (logger.isDebugEnabled()) {
+			logger.debug("Pattern matching for " + romanNumeral);
 		}
 
 		int result = 0;
 
 		if (!validateRomanLiteral(romanNumeral)) {
 
-			if (logger.isInfoEnabled()) {
-				logger.info(romanLiteral + " is not valid roman number");
+			if (logger.isDebugEnabled()) {
+				logger.debug(romanLiteral + " is not valid roman number");
 			}
 			return -1;
 		} else {

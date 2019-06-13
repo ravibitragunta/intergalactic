@@ -1,24 +1,29 @@
 package com.tw.iconverter;
 
-import java.util.regex.Pattern;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-        
-        String assertionKey = "Is";
-        String line = "tegj is L";
-        		
-        
-        String modified = Pattern.compile(assertionKey, Pattern.CASE_INSENSITIVE).matcher(line).replaceAll(assertionKey);
-		String[] parts = modified.split(assertionKey);
-		System.out.println (parts[0] + " " + parts[1]);
-		
-    }
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import com.tw.iconverter.lexer.CustomEvaluator;
+
+public class App {
+	private static Logger logger = LoggerFactory.getLogger(App.class);
+
+	public static void main(String[] args) {
+		CustomEvaluator evaluator = new CustomEvaluator();
+
+		if (args.length > 0) {
+			try (Stream<String> lines = Files.lines(Paths.get(args[0]))) {
+				lines.forEach((line) -> evaluator.processInput(line));
+			} catch (Exception e) {
+				logger.info("No file exists");
+			}
+		} else {
+			logger.info("Usage ");
+			logger.info("com.tw.iconverter.App <FileName>");
+		}
+
+	}
 }
