@@ -1,4 +1,4 @@
-package model;
+package com.tw.iconverter.model;
 
 import java.util.Map;
 import java.util.TreeMap;
@@ -6,7 +6,6 @@ import java.util.TreeMap;
 public class GalacticalToken {
 
 	private Map<String, String> tokenValueMap = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
-;
 	private static GalacticalToken instance;
 
 	private GalacticalToken() {

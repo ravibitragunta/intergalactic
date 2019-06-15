@@ -66,7 +66,9 @@ public class TestEvaluator {
 		String line9 = "how many Credits is glob prok Silver ?";
 		String line10 = "how many Credits is glob prok Gold ?";
 		String line11 = "how many Credits is glob prok Iron ?";
-		String line12 = "I have no idea what you are talking about";
+		String line12 = "how many silver is glob gold?";
+		String line13 = "how many iron is glob gold?";
+		String line14 = "how many iron is prok gold?";
 		new CustomEvaluator().processInput(line1);
 		new CustomEvaluator().processInput(line2);
 		new CustomEvaluator().processInput(line3);
@@ -79,6 +81,8 @@ public class TestEvaluator {
 		new CustomEvaluator().processInput(line10);
 		new CustomEvaluator().processInput(line11);
 		new CustomEvaluator().processInput(line12);
+		new CustomEvaluator().processInput(line13);
+		new CustomEvaluator().processInput(line14);
 		
 	}
 	

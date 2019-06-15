@@ -13,7 +13,7 @@ public enum Metals {
 	private String value;
 	
 	Metals (String value) {
-		this.value  = value;
+		this.setValue(value);
 	}
 	
 	public static boolean compareValue (String inputValue) {
@@ -25,12 +25,20 @@ public enum Metals {
 			if (logger.isDebugEnabled()) {
 				logger.debug("metal->" + metal.toString());
 			}
-			if (metal.toString().equalsIgnoreCase(inputValue)) {
+			if (metal.toString().equalsIgnoreCase(inputValue.trim())) {
 				matched = true;
 			}
 				
 		}
 		return matched;
+	}
+
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
 	}
 	
 

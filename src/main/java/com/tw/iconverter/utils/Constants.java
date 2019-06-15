@@ -15,7 +15,13 @@ public final class Constants {
 				"(Silver|Gold|Iron)?\\s*(is{1})\\s*(\\d+)\\s*credits";
 	
 	public static final String QUERY_TOKEN_PATTERN = 
-			"^(how much|how many)?\\s*.*(\\sis{1})\\s*(.*)\\?";
+			"^(how much|how many)?(.*)\\?";
+	
+	public static final String CUSTOM_QUERY_TOKEN_PATTERN = 
+			"(.*)(is\\s)(.*)";
+	
+	public static final String ROMAN_LITERAL_REGEX_PATTERN = 
+			"^(?=[MDCLXVI])M{0,3}(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$";
 	
 	public static final String INVALID_QUERY_RESPONSE = "I have no idea what you are talking about";
 	

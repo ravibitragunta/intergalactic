@@ -1,13 +1,14 @@
 com/tw/iconverter/factory/TokenizerFactory.class
 com/tw/iconverter/utils/Constants.class
 com/tw/iconverter/utils/RomanNumberConverter.class
+com/tw/iconverter/model/Tokens.class
 com/tw/iconverter/utils/RomanNumbers.class
 com/tw/iconverter/factory/BaseTokenizer.class
 com/tw/iconverter/factory/QueryTokenizer.class
 com/tw/iconverter/utils/Metals.class
 com/tw/iconverter/lexer/CustomEvaluator.class
+com/tw/iconverter/model/GalacticalToken.class
 com/tw/iconverter/App.class
 com/tw/iconverter/factory/AssertionTokenizer.class
 com/tw/iconverter/factory/MetalTokenizer.class
 com/tw/iconverter/factory/TokenTypes.class
-model/GalacticalToken.class

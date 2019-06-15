@@ -3,12 +3,10 @@ package factory;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Map;
-
 import org.junit.Test;
-
 import com.tw.iconverter.factory.MetalTokenizer;
-
-import model.GalacticalToken;
+import com.tw.iconverter.model.GalacticalToken;
+import com.tw.iconverter.model.Tokens;
 
 public class TestMetalTokenizer {
 	@Test 
@@ -17,8 +15,8 @@ public class TestMetalTokenizer {
 		dummyMap.put("glob", "I");
 		dummyMap.put("prok", "V");
 		String line = "glob prok Gold is 57800 Credits";
-		new MetalTokenizer().parseLine(line);
-		assertEquals("14450.0", dummyMap.get("Gold")) ;
+		Tokens token = new MetalTokenizer().parseLine(line);
+		assertEquals("14450.0", token.getValue()) ;
 		
 	}
 	
@@ -30,8 +28,8 @@ public class TestMetalTokenizer {
 		dummyMap.put("pish", "X");
 		dummyMap.put("tegz", "L");
 		String line = "pish pish Iron is 3910 Credits";
-		new MetalTokenizer().parseLine(line);
-		assertEquals("195.5", dummyMap.get("Iron")) ;
+		Tokens token = new MetalTokenizer().parseLine(line);
+		assertEquals("195.5", token.getValue()) ;
 	}
 
 }

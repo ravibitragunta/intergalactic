@@ -7,9 +7,10 @@ import java.util.regex.Pattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.tw.iconverter.utils.Constants.ROMAN_LITERAL_REGEX_PATTERN;
+
 public class RomanNumberConverter {
 
-	private static final String ROMAN_LITERAL_REGEX_PATTERN = "^(?=[MDCLXVI])M{0,3}(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$";
 	private static Logger logger = LoggerFactory.getLogger(RomanNumberConverter.class);
 
 	public static boolean validateRomanLiteral(String romanLiteral) {

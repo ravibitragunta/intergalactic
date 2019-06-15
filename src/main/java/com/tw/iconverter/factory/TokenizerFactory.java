@@ -8,11 +8,9 @@ import static com.tw.iconverter.utils.Constants.*;
 
 public class TokenizerFactory {
 
-	private Pattern pattern;
 	private static Logger logger = LoggerFactory.getLogger(TokenizerFactory.class);
-
-	public BaseTokenizer getTokenizer(String line) {
-
+	public static BaseTokenizer getTokenizer(String line) {
+		Pattern pattern = null;
 		if (pattern.compile(ASSERTION_TOKEN_PATTERN, Pattern.CASE_INSENSITIVE).matcher(line).find()) {
 			if (logger.isDebugEnabled()) {
 				logger.debug("Assertion Matched");

@@ -12,12 +12,14 @@ public class App {
 	private static Logger logger = LoggerFactory.getLogger(App.class);
 
 	public static void main(String[] args) {
+		
 		CustomEvaluator evaluator = new CustomEvaluator();
 
 		if (args.length > 0) {
 			try (Stream<String> lines = Files.lines(Paths.get(args[0]))) {
 				lines.forEach((line) -> evaluator.processInput(line));
 			} catch (Exception e) {
+				e.printStackTrace();
 				logger.info("No file exists");
 			}
 		} else {
