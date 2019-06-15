@@ -22,11 +22,7 @@ public interface ICompute {
 
 		Pattern metalPattern = Pattern.compile(metalSearch, Pattern.CASE_INSENSITIVE);
 		Matcher metalMatcher = metalPattern.matcher(expression);
-		String metal = null;
-		if (metalMatcher.find()) {
-			metal = metalMatcher.group(1);
-		}
-
+		
 		Arrays.asList(expression.split(" ")).forEach((e) -> {
 			if (!Metals.compareValue(e) && e != null) {
 				galacticalNumeral.append(galaticalValuesMap.get(e));
@@ -38,22 +34,23 @@ public interface ICompute {
 		if (galacticalNumeral.length() > 0) {
 			value = RomanNumberConverter.romanToNumber(galacticalNumeral.toString());
 		}
+		
+		if (metalMatcher.find()) {
+			String metal = null;
+			metal = metalMatcher.group(1);
+			Double metalValue = 1d;
+			if (metal != null) {
+				try {
+					metalValue = Double.parseDouble(galaticalValuesMap.get(metal)) * value;
+					return metalValue;
 
-		if (value == -1) {
-			return 0;
-		}
-
-		if (metal != null) {
-			try {
-				Double metalValue = Double.parseDouble(galaticalValuesMap.get(metal)) * value;
+				} catch (Exception e) {
+					metalValue = -1d;
+				}
 				return metalValue;
-
-			} catch (Exception e) {
-				return -1;
-			}
-		} else {
-			return value;
+			} 
 		}
+		return value;
 
 	}
 
